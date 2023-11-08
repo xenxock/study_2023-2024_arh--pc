@@ -17,7 +17,7 @@ GLOBAL _start
  
  mov eax,3
  mov ebx,0
- mov edx,buf1
+ mov ecx,buf1
  mov edx,80
  int 80h
  
