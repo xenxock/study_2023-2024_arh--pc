@@ -21,17 +21,14 @@ GLOBAL _start
 	mov eax,x
 	call atoi
 	
-	xor edx,edx
-	mov eax,x
-	mov ebx,x
+	mov ebx,eax
 	mul ebx
 	mul ebx
-	xor edx,edx 
 	mov ebx,2
 	div ebx
+	inc eax
 	
 	mov edi,eax
-	inc edi
 	
 	mov eax,div
 	call sprint
